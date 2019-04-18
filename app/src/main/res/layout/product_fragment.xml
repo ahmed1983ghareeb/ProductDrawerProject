@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Product information"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewName1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Product name"
+                style="@style/text_fields"/>
+
+            <TextView
+                android:id="@+id/textViewCost1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Cost"
+                style="@style/text_fields"/>
+
+            <TextView
+                android:id="@+id/textViewFees1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Fees"
+                style="@style/text_fields"/>
+
+            <TextView
+                android:id="@+id/textViewTotal1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Total"
+                style="@style/text_fields"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="match_parent"
+
+                android:text="---------------"
+                style="@style/text_fields"/>
+
+            <TextView
+                android:id="@+id/textViewCost2"
+                android:layout_width="match_parent"
+
+                android:text="---------------"
+                style="@style/text_fields"/>
+
+            <TextView
+                android:id="@+id/textViewFees2"
+                android:layout_width="match_parent"
+                android:text="---------------"
+                style="@style/text_fields" />
+
+            <TextView
+                android:id="@+id/textViewTotal2"
+                android:layout_width="match_parent"
+                android:text="---------------"
+                style="@style/text_fields" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>
